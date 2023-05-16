@@ -154,7 +154,7 @@ describe('Detectors', () => {
   const detectorName = 'test detector';
 
   before(() => {
-    cy.cleanUpTests();
+    cy.cleanUpTests(); // clean all resources
 
     cy.createIndex(cypressIndexWindows, null, sample_index_settings);
 
